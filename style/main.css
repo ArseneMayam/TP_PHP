@@ -126,3 +126,85 @@ footer {
     text-align: center;
     font-size: 50px;
 }
+
+/**CSS POUR LE CONTACT.PHP****************************************************************************************/
+#main_contact {
+    display: flex;
+    justify-content: space-around;
+}
+
+#div_formContact label {
+    width: 25%;
+    display: inline-block;
+    margin-top: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+#div_formContact {
+    width: 50%;
+    margin-right: -100px;
+    margin-top: 50px;
+}
+
+#div_formContact textarea {
+    margin-left: 70px;
+}
+
+#div_formContact input {
+    /* font-family: 'Open Sans Condensed', sans-serif;*/
+    text-decoration: none;
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: 9px auto;
+    font-size: 17px;
+    /*color: #fff;*/
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 27px;
+
+}
+
+p.error {
+    color: red;
+    font-size: 15px;
+    margin-top: -25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
