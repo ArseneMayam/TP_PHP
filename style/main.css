@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+/*CSS pour la div coordonnés du header*/
+#div_top ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*les li sont sur la meme ligne*/
+#div_top li {
+    display: inline-block;
+}
+
+#div_top a {
+    padding: 10px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    color: white;
+}
+
+#div_top {
+    background-color: rgb(30, 46, 71);
+    opacity: 0.9;
+    border-bottom: 5px solid darkblue;
+    border-top: 5px solid darkblue;
+    right: 0;
+    left: 0;
+
+}
+
+/**CSS POUR MENU.PHP***************************************************************************************/
+/*les li sont sur la meme ligne*/
+nav > ul > li {
+    display: inline-block;
+}
+
+#menu li:last-of-type {
+    margin-right: 10px;
+}
+
+/*les liens du menu.php*/
+#menu a {
+    padding: 10px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    margin-bottom: -5px;
+}
+
+#menu a:hover {
+    color: white;
+    font-size: 25px;
+}
+
+/* la liste du menu*/
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*CSS POUR HEADER.PHP***********************************************************/
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(30, 46, 71);
+    opacity: 0.9;
+    border-bottom: 5px solid darkblue;
+    right: 0;
+    left: 0;
+
+}
+
+/**/
+#div_logo a {
+    padding: 10px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+}
+
+/**CSS GENERAL*********************************************************************/
+body {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+main {
+    background-color: rgb(30, 46, 71);
+    opacity: 0.9;
+}
+
+/**CSS POUR LE FOOTER.PHP**************************************************************************************/
+footer {
+    background-color: rgb(30, 46, 71);
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+}
+
+#social i {
+    /* margin-right: 8px;
+     margin-left: 7px;*/
+    width: 55px;
+}
+
+#social {
+    text-align: center;
+    font-size: 50px;
+}
