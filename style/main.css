@@ -103,13 +103,14 @@ body {
 main {
     background-color: rgb(30, 46, 71);
     opacity: 0.9;
+
 }
 
 /**CSS POUR LE FOOTER.PHP**************************************************************************************/
 footer {
     background-color: rgb(30, 46, 71);
     opacity: 0.9;
-    position: absolute;
+    /*position: absolute;*/
     bottom: 0;
     right: 0;
     left: 0;
@@ -127,10 +128,12 @@ footer {
     font-size: 50px;
 }
 
-/**CSS POUR LE CONTACT.PHP****************************************************************************************/
+/**CSS POUR LE CONTACT.PHP************************************************************************************/
 #main_contact {
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #div_formContact label {
@@ -173,12 +176,76 @@ p.error {
     margin-top: -25px;
 }
 
+/**CSS POUR INDEX.PHP**************************************************************************************************/
 
+/*le div contenant les bateaux*/
+#nosBateaux {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+}
 
+#bateauxMoteur {
+    border: 5px blue solid;
 
+}
 
+#bateauxVoiles {
+    border: 5px blue solid;
 
+}
 
+.nosBateaux {
+    width: 30%;
+    height: 250px;
+    background-color: white;
+    opacity: 0.7;
+}
+
+/*le div contenant les produits*/
+#nosProduits {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+
+}
+
+#vestesSauvetage {
+    border: 5px blue solid;
+
+}
+
+#vetNautique {
+    border: 5px red solid;
+
+}
+
+#accessoires {
+    border: 5px blue solid;
+
+}
+
+.nosProduits {
+    width: 30%;
+    height: 250px;
+    background-color: white;
+    opacity: 0.7;
+}
+
+.h2produits {
+    margin-right: 15px;
+    color: white;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+#mainIndex {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 
 

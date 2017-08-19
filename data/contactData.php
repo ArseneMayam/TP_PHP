@@ -11,10 +11,10 @@ $prenom = $_POST['saisie_prenom'];
 $email = $_POST['saisie_email'];
 $textMsg = $_POST['message'];
 
-var_dump($nom);
-var_dump($prenom);
-var_dump($email);
-var_dump($textMsg);
+//var_dump($nom);
+//var_dump($prenom);
+//var_dump($email);
+//var_dump($textMsg);
 
 // on établie une connexion à la base de donnée
 $liendb = mysqli_connect('localhost', 'root', 'root', 'tp_php');
@@ -29,12 +29,14 @@ if (!$liendb) {
 $sql = "INSERT INTO contact(nom, prenom, email)  
 VALUES('$nom','$prenom','$email ' )";
 
-if (mysqli_query($liendb, $sql)) {
+mysqli_query($liendb, $sql);
+
+/*if (mysqli_query($liendb, $sql)) {
     echo "Requete reussie";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($liendb);
 }
-
+*/
 
 // on envoie un accusé de réception
 // Envoie du formulaire par mail
@@ -51,10 +53,9 @@ $message .= "\n";
 $message .= "On vous recontacterai très prochainement" . "\n";
 $message .= "- L'Equipe location-Bateaux" . "\n";
 
+mail($destinataire, $titre, $message);
 
-if (mail($destinataire, $titre, $message)) {
-    echo '<p> Message transmis', '</p>';
-}
+
 
 
 mysqli_close($liendb);
