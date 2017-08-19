@@ -7,6 +7,8 @@
  */
 
 
+require_once 'data/contactData.php'; // inclue contactData.php
+
 /*var_dump($_SERVER['REQUEST_METHOD']);*/
 $en_post = ('POST' === $_SERVER['REQUEST_METHOD']); // Indique si on est en post ou pas
 
@@ -75,7 +77,7 @@ require_once 'views/top_page.php';
         <h2>Informations</h2>
     </div>
     <div id="div_formContact">
-        <form action="" method="post">
+        <form method="post">
             <label for="nom">Nom</label>
             <input type="text" name="saisie_nom" id="nom" placeholder="Votre nom"
                    value="<?= $en_post ? $fnom['val'] : '' ?>">
@@ -104,6 +106,7 @@ require_once 'views/top_page.php';
             <label for="message">Votre message</label>
             <textarea name="message" id="" cols="83" rows="10"></textarea>
             <input type="submit" value="Envoyer" name="envoyer">
+
         </form>
     </div>
 
