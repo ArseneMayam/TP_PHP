@@ -106,6 +106,7 @@ require_once 'views/top_page.php';
             <label for="message">Votre message</label>
             <textarea name="message" id="" cols="83" rows="10"></textarea>
             <input type="submit" value="Envoyer" name="envoyer">
+
         </form>
     </div>
 
