@@ -185,6 +185,13 @@ p.error {
     border: 1px solid white;
 }
 
+img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
 #bateauxMoteur {
     border: 5px blue solid;
 
@@ -199,7 +206,8 @@ p.error {
     width: 30%;
     height: 250px;
     background-color: white;
-    opacity: 0.7;
+    overflow: scroll;
+
 }
 
 /*le div contenant les produits*/
@@ -211,7 +219,7 @@ p.error {
 }
 
 #vestesSauvetage {
-    border: 5px blue solid;
+    border: 5px green solid;
 
 }
 
@@ -221,7 +229,7 @@ p.error {
 }
 
 #accessoires {
-    border: 5px blue solid;
+    border: 5px yellow solid;
 
 }
 
@@ -229,7 +237,9 @@ p.error {
     width: 30%;
     height: 250px;
     background-color: white;
-    opacity: 0.7;
+    overflow: scroll;
+
+
 }
 
 .h2produits {
@@ -245,6 +255,7 @@ h3 {
 #mainIndex {
     margin-top: 20px;
     margin-bottom: 20px;
+
 }
 
 
