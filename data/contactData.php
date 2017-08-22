@@ -42,7 +42,9 @@ mysqli_query($liendb, $sql);
 // Envoie du formulaire par mail
 
 $destinataire = $email;
+//var_dump($destinataire);
 $titre = "Accusé d'envoie";
+//var_dump($titre);
 
 $message = "";
 $message .= "Bonjour, " . $prenom . ' ' . $nom . "\n";
