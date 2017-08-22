@@ -51,7 +51,7 @@ if (array_key_exists('saisie_prenom', $_POST)) {
 
     $fprenom['is_valid'] = (1 === preg_match('/^[a-zA-Z]{3,}$/', $fprenom['val']));
     if (!$fprenom['is_valid']) {
-        $fprenom['err_msg'] = 'Le prénom doit comporter au moins 3 caractères alphabétiques.';
+        $fprenom['err_msg'] = 'Le prénom est mal saisie.';
     }
 }
 /*var_dump($validation);*/
@@ -61,7 +61,7 @@ if (array_key_exists('saisie_mail', $_POST)) {
     $fmail['val'] = trim(filter_input(INPUT_POST, 'saisie_mail', FILTER_SANITIZE_STRING));
 
     if (filter_var($fmail['val'], FILTER_VALIDATE_EMAIL)) {
-        $fmail['err_msg'] = 'Veuillez saisir une adresse mail correct';
+        $fmail['err_msg'] = 'Veuillez saisir une adresse mail valide';
     }
 }
 
@@ -73,8 +73,12 @@ require_once 'views/top_page.php';
 ?>
 <!--le main-->
 <main id="main_contact">
-    <div>
-        <h2>Informations</h2>
+    <div id="informations">
+        <h2 id="info">Informations</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2795.636663272565!2d-73.52923368444074!3d45.517392279101614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91b1ac2314193%3A0x585df26e09ae411a!2s39+Chemin+du+Chenal+le+Moyne%2C+Montr%C3%A9al%2C+QC+H3C!5e0!3m2!1sen!2sca!4v1503344325645"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <p><a href="Telephone:5145852781" target="_top"> Telephone: 514-385-9781</a></p>
+
     </div>
     <div id="div_formContact">
         <form method="post">

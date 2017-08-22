@@ -176,6 +176,19 @@ p.error {
     margin-top: -25px;
 }
 
+a {
+    padding: 10px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    color: white;
+}
+
+#info {
+    color: white;
+}
+
 /**CSS POUR INDEX.PHP**************************************************************************************************/
 
 /*le div contenant les bateaux*/
@@ -250,6 +263,7 @@ img {
 
 h3 {
     text-align: center;
+
 }
 
 #mainIndex {
@@ -258,27 +272,30 @@ h3 {
 
 }
 
-
-/******************************* CSS pour la page catalogue*******************************************/
+/******************************* CSS pour la page catalogue******************************************/
 .half {
     float: left;
     width: 50%;
     padding: 0 1em;
 }
-/* Acordeon styles */
+
+/* Acordeon styles*/
 .tab {
-    position: relative;
-    margin-bottom: 1px;
-    width: 100%;
-    color: #fff;
-    overflow: hidden;
+    /* position: relative
+     margin-bottom: 1px;
+     width: 100%;
+     color: #fff;*/
+    overflow: scroll;
+    display: inline-block;
 }
-input {
+
+#tab-one {
     position: absolute;
     opacity: 0;
     z-index: -1;
 }
-label {
+
+.tab-one {
     position: relative;
     display: block;
     padding: 0 0 0 1em;
@@ -309,6 +326,8 @@ input:checked ~ .tab-content {
     max-height: 10em;
 }
 /* Icon */
+
+/*
 label::after {
     position: absolute;
     right: 0;
@@ -322,6 +341,7 @@ label::after {
     -o-transition: all .35s;
     transition: all .35s;
 }
+*/
 input[type=checkbox] + label::after {
     content: "+";
 }
@@ -335,10 +355,113 @@ input[type=radio]:checked + label::after {
     transform: rotateX(180deg);
 }
 
+#main_catalogue {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: nowrap;
+}
 
+#div_catalogue {
 
+    justify-content: space-between;
 
+}
 
+#h2Catalogue {
+    display: inline-block;
+    align-self: flex-start;
+}
+
+h1 {
+    color: white;
+}
+
+.tab-content {
+    overflow: scroll;
+}
+
+/*SYSTEME DE GRILLES********************************************************************************************/
+
+/**on divise la largeur de l'écran en 12 colonnes. Chaque colonne occupe un douzième de la page**************/
+
+/*largeur d'1 colonne*/
+.col-1 {
+    width: 8.33%;
+}
+
+/*largeur de 2 colonnes*/
+.col-2 {
+    width: 16.66%;
+}
+
+/*largeur de 3 colonnes*/
+.col-3 {
+    width: 25%;
+}
+
+/*largeur de 4 colonnes*/
+.col-4 {
+    width: 33.33%;
+}
+
+/*largeur de 5 colonnes*/
+.col-5 {
+    width: 41.66%;
+}
+
+/*largeur de 6 colonnes*/
+.col-6 {
+    width: 50%;
+}
+
+/*largeur de 7 colonnes*/
+.col-7 {
+    width: 58.33%;
+}
+
+/*largeur de 8 colonnes*/
+.col-8 {
+    width: 66.66%;
+}
+
+/*largeur de 9 colonnes*/
+.col-9 {
+    width: 75%;
+}
+
+/*largeur de 10 colonnes*/
+.col-10 {
+    width: 83.33%;
+}
+
+/*largeur de 11 colonnes*/
+.col-11 {
+    width: 91.66%;
+}
+
+/*largeur de 12 colonnes*/
+.col-12 {
+    width: 100%;
+}
+
+/**on aligne les colonnes les unes à côté des autres avec la propriété float**************/
+[class*="col-"] {
+    float: left;
+    padding: 0 15px;
+}
+
+/**
+	chaque rangée de colonnes doit être enveloppée dans une div de class "row". on applique un clear:both sur chaque row afin d'annuler l'effet de float
+    et éviter que les éléments suivants remontent et entourent le "row"
+
+**/
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
 
 
 
